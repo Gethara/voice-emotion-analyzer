@@ -69,10 +69,10 @@ We extract the following features from the audio files:
 
 Feature extraction code is available in
 `model_training/extract_feature.py`
-
+```pyhton
 def extract_feature(file_name, mfcc, chroma, mel, duration=3):
     # Implementation here
-
+```
 
 
  **Model Training**
@@ -108,18 +108,18 @@ import streamlit as st
 **Installation**
 To install the required dependencies, run
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
  **Usage**
 
 1. Model Training:
 
-python model_training/train_model.py
+`python model_training/train_model.py`
 
 2. Streamlit Application:
 
-streamlit run app.py
+`streamlit run app.py`
 
 **Results**
 
