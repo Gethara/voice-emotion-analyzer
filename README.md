@@ -295,6 +295,8 @@ if __name__ == '__main__':
     main()
 
 ```
+![image](https://github.com/Gethara/voice-emotion-analyzer/assets/109304061/3fb44c4b-55a4-4ec2-a02d-2e21eacad31c)
+![image](https://github.com/Gethara/voice-emotion-analyzer/assets/109304061/9c809398-6690-4ede-a7f7-391efc5454ff)
 
 **Installation**
 To install the required dependencies, run
@@ -306,7 +308,7 @@ To install the required dependencies, run
 
 1. Model Training:
 
-`python model_training/train_model.py`
+`python app/model_training/train_model.py`
 
 2. Streamlit Application:
 
