@@ -15,7 +15,7 @@ This project aims to classify emotions from audio recordings and microphone inpu
 7.  Installation
 8.  Usage
 9.  Results
-
+10. Steps Taken to Increase Model Accuracy
     
 **Project Structure**     
 ```python
@@ -317,3 +317,37 @@ To install the required dependencies, run
 **Results**
 
 The model achieves an accuracy of approximately 70% on the test set.
+
+**Steps Taken to Increase Model Accuracy**
+
+1. Feature Extraction Enhancements:
+
+
+* Utilized MFCC, Chroma, and Mel features for better representation of audio data.
+
+* Adjusted the duration of audio samples for consistent feature length.
+
+
+2. Data Augmentation and Cleansing:
+
+* Combined RAVDESS and ASVP-ESD datasets to increase the diversity and size of training data.
+
+* Filtered and focused on the most distinct emotions: happy, sad, angry, and fearful.
+
+3. Model Training and Optimization:
+
+* Implemented a robust pipeline using StandardScaler and SelectKBest for feature scaling and selection.
+
+* Fine-tuned hyperparameters using GridSearchCV to find the best performing model configuration.
+
+* Experimented with different architectures and activation functions of the MLPClassifier.
+
+4. Evaluation and Validation:
+
+* Performed rigorous cross-validation to ensure model generalization.
+* Saved the best model using joblib for consistent predictions and future use.
+
+5. Interactive Application Development:
+
+* Developed a user-friendly Streamlit app for real-time emotion recognition from audio files.
+* Incorporated error handling and detailed information display for enhanced user experience.
