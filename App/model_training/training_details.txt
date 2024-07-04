@@ -1,0 +1,6 @@
+Pipeline(steps=[('scaler', StandardScaler()),
+                ('feature_selection', SelectKBest(k=120)),
+                ('mlp',
+                 MLPClassifier(alpha=0.001, hidden_layer_sizes=(300,),      
+                               max_iter=4000, random_state=11, solver='sgd',
+                               verbose=True))])
