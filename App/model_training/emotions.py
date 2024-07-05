@@ -35,5 +35,5 @@ emotions={
 }
 
 #### But!!!
-# Emotions to observe only following
+# Emotions to observe : only following
 observed_emotions=['happy', 'sad','angry', 'fearful']   
